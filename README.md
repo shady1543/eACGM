@@ -2,7 +2,7 @@
 
 **eACGM:** an **e**BPF-based **A**utomated **C**omprehensive **G**overnance and **M**onitoring framework.
 
-English | [中文](zh_cn.md)
+English | [中文](README_zh.md)
 
 - Full-stack tracing for hardware (GPU, NCCL) and software (CUDA, Python, PyTorch).
 - Zero-intrusive & low overhead.
