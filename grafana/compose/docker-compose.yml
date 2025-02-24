@@ -1,0 +1,41 @@
+version: '2.1'
+services:
+  mysql:
+    build: 
+      context: ./mysql
+      dockerfile: dockerfile
+    ports:
+      - "3306:3306"
+    volumes:
+      - ../volumes/mysql/data:/var/lib/mysql
+    environment:
+      - "MYSQL_ROOT_PASSWORD=adminpwd"
+    container_name: gf-mysql
+    networks:
+      - gf-network
+  grafana:
+    build:
+      context: ./grafana
+      dockerfile: dockerfile
+    container_name: gf-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - "GF_SECURITY_ADMIN_PASSWORD=admin"
+    depends_on:
+      - mysql
+    networks:
+      - gf-network
+    links:
+      - mysql
+    
+
+networks:
+  gf-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.114.0/24
+          gateway: 192.168.114.254
+    
