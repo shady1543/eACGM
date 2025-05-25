@@ -2,7 +2,7 @@
 
 **eACGM:** An **e**BPF-based **A**utomated **C**omprehensive **G**overnance and **M**onitoring framework for AI/ML systems.
 
-**English| [中文](README_zh.md)**
+**English | [中文](README_zh.md)**
 
 ---
 
