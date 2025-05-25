@@ -1,27 +1,33 @@
 # eACGM
 
-**eACGM:** an **e**BPF-based **A**utomated **C**omprehensive **G**overnance and **M**onitoring framework.
+**eACGM:** An **e**BPF-based **A**utomated **C**omprehensive **G**overnance and **M**onitoring framework for AI/ML systems.
 
-[English](README.md) | 中文
+**[English](README.md) | 中文**
 
-- 实现硬件（GPU, NCCL）和软件（CUDA, Python, PyTorch）的全栈追踪；
-- 零侵入，低开销；
+---
+
+:star: **[News] 本项目已被 [IEEE/ACM IWQoS 2025 (CCF-B)](https://iwqos2025.org/) 正式接收！**
+
+**[Paper(Dropbox)](https://www.dropbox.com/scl/fi/q4vplv95usw4u5h3syx62/IWQoS_2025.pdf?rlkey=gv8h65oupkzrmv6zu1yu7s558&e=1&st=k8sttham&dl=0)**
+
+---
+
+eACGM 实现了面向 AI/ML 工作系统的硬件（GPU, NCCL）与软件（CUDA, Python, PyTorch）的全栈观测，具有无侵入、低开销的特性。
 
 ![img](asset/arch.png)
 
-目前实现了以下功能：
+## 主要功能
 
-- [x] 基于 eBPF 实现对 CUDA Runtime 的事件探测
-- [x] 基于 eBPF 实现对 NCCL GPU 通信库的事件探测
-- [x] 基于 eBPF 实现对 Python 虚拟机的函数调用探测
-- [x] 基于 eBPF 实现对 Pytorch 的算子探测
-- [x] 基于 `libnvml` 实现对进程级的 GPU 信息探测
-- [x] 基于 `libnvml` 实现对 GPU 的信息探测
-- [x] 实现 eBPF 程序代码自动生成
-- [x] 实现对捕获到的 CUDA Runtime 事件进行分析
-- [x] 实现对捕获到的 NCCL GPU 通信库事件进行分析
-- [x] 实现对捕获到的 Python 虚拟机的函数调用进行分析
-- [x] 实现对捕获到的 Pytorch 的算子进行分析
+- [x] 基于 eBPF 实现对 CUDA Runtime 的事件追踪
+- [x] 基于 eBPF 实现对 NCCL GPU 通信库的事件追踪
+- [x] 基于 eBPF 实现对 Python 虚拟机的函数调用追踪
+- [x] 基于 eBPF 实现对 PyTorch 算子的事件追踪
+- [x] 基于 `libnvml` 实现进程级 GPU 信息监控
+- [x] 基于 `libnvml` 实现全局 GPU 信息监控
+- [x] 支持自动生成 eBPF 监控程序代码
+- [x] 支持对所有捕获事件和算子的统一分析
+- [x] 灵活集成 CUDA、NCCL、PyTorch、Python、GPU 等多层追踪
+- [x] 可直接对接可视化平台（如 Grafana）展示监控数据
 
 ## 可视化
 
@@ -57,3 +63,7 @@ sh ./stop.sh
 - `sampler_nccl.py`: 使用 `libnvml` 实现对进程级的 GPU 信息探测
 - `sampler_eacg.py`: 实现对上述所有信息探测
 - `webui.py`: 自动将探测到的数据在 Grafana 上可视化
+
+## 论文引用
+
+如果本项目对您有帮助，欢迎引用我们即将在 IWQoS 2025 发表的论文。
