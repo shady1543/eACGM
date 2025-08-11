@@ -8,7 +8,7 @@
 
 :star: **[News] Our work has been accepted by [IEEE/ACM IWQoS 2025 (CCF-B)! ](https://iwqos2025.ieee-iwqos.org/)**
 
-**[Paper(Dropbox)](https://www.dropbox.com/scl/fi/q4vplv95usw4u5h3syx62/IWQoS_2025.pdf?rlkey=gv8h65oupkzrmv6zu1yu7s558&e=1&st=k8sttham&dl=0)**
+**[[arXiv]](https://arxiv.org/abs/2506.02007)**
 
 ---
 
@@ -66,4 +66,17 @@ The `demo` folder provides example programs to showcase the capabilities of eACG
 
 ## Citation
 
-If you find this project helpful, please consider citing our IWQoS 2025 paper (In press, to appear).
+If you find this project helpful, please consider citing our IWQoS 2025 paper:
+
+```
+@misc{xu2025eacgmnoninstrumentedperformancetracing,
+      title={eACGM: Non-instrumented Performance Tracing and Anomaly Detection towards Machine Learning Systems}, 
+      author={Ruilin Xu and Zongxuan Xie and Pengfei Chen},
+      year={2025},
+      eprint={2506.02007},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2506.02007}, 
+}
+```
+

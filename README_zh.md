@@ -8,7 +8,7 @@
 
 :star: **[News] 本项目已被 [IEEE/ACM IWQoS 2025 (CCF-B)](https://iwqos2025.org/) 正式接收！**
 
-**[Paper(Dropbox)](https://www.dropbox.com/scl/fi/q4vplv95usw4u5h3syx62/IWQoS_2025.pdf?rlkey=gv8h65oupkzrmv6zu1yu7s558&e=1&st=k8sttham&dl=0)**
+**[[arXiv]](https://arxiv.org/abs/2506.02007)**
 
 ---
 
@@ -66,4 +66,17 @@ sh ./stop.sh
 
 ## 论文引用
 
-如果本项目对您有帮助，欢迎引用我们即将在 IWQoS 2025 发表的论文。
+如果本项目对您有帮助，欢迎引用我们在 IWQoS 2025 发表的论文：
+
+```
+@misc{xu2025eacgmnoninstrumentedperformancetracing,
+      title={eACGM: Non-instrumented Performance Tracing and Anomaly Detection towards Machine Learning Systems}, 
+      author={Ruilin Xu and Zongxuan Xie and Pengfei Chen},
+      year={2025},
+      eprint={2506.02007},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2506.02007}, 
+}
+```
+
